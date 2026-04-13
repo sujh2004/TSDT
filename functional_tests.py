@@ -38,5 +38,5 @@ class NewVisitorTest(unittest.TestCase):
         # 他访问那个URL，发现他的待办事项列表还在
         # 他满意的离开了
 
-if __name__ == __name__:
+if __name__ == "__main__":
     unittest.main()
