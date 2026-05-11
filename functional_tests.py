@@ -39,7 +39,7 @@ class NewVisitorTest(unittest.TestCase):
         # 待办事项表格中显示了“1： Buy flowers"
         inputbox.send_keys(Keys.ENTER)
         time.sleep(1)
-        self.check_for_row_in_list_table('1:Buy flowers')
+        self.check_for_row_in_list_table('1: Buy flowers')
         # 页面中有显示了一个文本输入框，可以输入其他代办事项"
         # 他输入了“Send a gift to Lisi"
         inputbox = self.browser.find_element(By.ID,'id_new_item')
