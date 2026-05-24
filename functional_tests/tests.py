@@ -101,7 +101,7 @@ class NewVisitorTest(LiveServerTestCase):
 
         #王五获得了他的唯一URL
         wangwu_list_url = self.browser.current_url
-        self.assertRegex(wangwu_list_url, '/list/.+')
+        self.assertRegex(wangwu_list_url, '/lists/.+')
         self.assertNotEqual(wangwu_list_url, zhangsan_list_url)
 
         page_text = self.browser.find_element(By.TAG_NAME,'body').text
